@@ -32,8 +32,8 @@
                 <span></span>
             </div>
 
-            <div id="menu" class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+            <div id="menu" class="collapse navbar-collapse" id="menu navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" id="ml-auto">
                     <li class="nav-item mr-3">
                         <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -102,10 +102,12 @@
 <script>
     let burgerMenu = document.getElementById('burger-menu');
     let show = document.getElementById('menu');
+    let menuCenter = document.getElementById('ml-auto');
 
     burgerMenu.addEventListener('click', function (){
         this.classList.toggle('close');
         show.classList.toggle('show');
+        menuCenter.classList.remove('ml-auto');
     })
 </script>
 </body>
