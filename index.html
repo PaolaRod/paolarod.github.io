@@ -23,10 +23,10 @@
             <a class="navbar-brand" href="#">Dipiabit
                 <!--            <img src="images/Developers2.png" class="logo-brand">-->
             </a>
-<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
-<!--                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                <span class="navbar-toggler-icon"></span>-->
-<!--            </button>-->
+            <!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
+            <!--                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--                <span class="navbar-toggler-icon"></span>-->
+            <!--            </button>-->
 
             <div id="burger-menu">
                 <span></span>
@@ -39,7 +39,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -70,12 +71,17 @@
                 <p class="lead text-light mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
                     harum in laborum nihil non pariatur, placeat, praesentium quia saepe sit ullam unde voluptates! Amet
                     assumenda cum et, repellat soluta vel.</p>
-                <a href="" class="btn btn-outline-light">Empezar</a>
+                <a class="btn btn-outline-light" href="#">Empezar</a>
             </div>
             <div class="col-lg-6">
                 <img src="images/pc.png" class="img-fluid">
             </div>
         </div>
+    </div>
+    <div class="waves">
+        <div class="wave a"></div>
+        <div class="wave b"></div>
+        <div class="wave c"></div>
     </div>
 </section>
 
@@ -104,7 +110,7 @@
     let show = document.getElementById('menu');
     let menuCenter = document.getElementById('ml-auto');
 
-    burgerMenu.addEventListener('click', function (){
+    burgerMenu.addEventListener('click', function () {
         this.classList.toggle('close');
         show.classList.toggle('show');
         menuCenter.classList.toggle('ml-auto');

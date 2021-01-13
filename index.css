@@ -18,26 +18,10 @@ body {
     font-size: 1rem;
     font-weight: 400;
     color: var(--light);
-    background-image: url("images/Group 1.png");
 }
 
 /*.logo-brand {*/
 /*    max-height: 100px;*/
-/*}*/
-
-.btn-dipiabit {
-    color: white;
-    background: linear-gradient(to left, #370add, #6012ac)
-}
-
-.btn-dipiabit:hover {
-    color: white;
-    background: linear-gradient(to left, #370add, #6012ac);
-    opacity: .8;
-}
-
-/*.navbar {*/
-/*    min-height: 5rem;*/
 /*}*/
 
 .text-primary {
@@ -46,14 +30,74 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/*.background {*/
-/*    background-image: url("images/Group 1.png") !important;*/
-/*}*/
+.background {
+    background: -webkit-linear-gradient(#200583, #4a058d);
+    height: 775px;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
 
 /*.bg-image-x {*/
 /*    background-size: cover;*/
 /*    min-height: 1000px;*/
 /*}*/
+
+.waves {
+    position: absolute;
+    overflow: hidden;
+    /*left: 0;*/
+    /*right: 0;*/
+    /*height: 200px;*/
+    /*bottom: 0;*/
+    bottom: -150px;
+    height: 527px;
+    width: 100%;
+    z-index: 1;
+}
+
+.wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*width: 100%;*/
+    /*border-radius: 50%;*/
+    height: 427px;
+    width: 2402px;
+    /*background: rgba(0, 0, 0, .3);*/
+    background: url(./images/waves.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+}
+
+.wave a {
+    background-position: 0 -854px;
+}
+
+.wave.b {
+    background-position: 0 -427px;
+    animation-delay: .5s;
+}
+
+.wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(-80px,60px);
+    }
+    100% {
+        transform: translate(160px, -30px);
+    }
+}
 
 
 @media screen and (max-width: 750px) {
