@@ -20,6 +20,11 @@
 </head>
 <body>
 <section class="background">
+    <div class="waves">
+        <div class="wave a"></div>
+        <div class="wave b"></div>
+        <div class="wave c"></div>
+    </div>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <a class="navbar-brand" href="#">
@@ -65,13 +70,13 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="row d-flex">
+        <div class="bigger row d-flex">
             <div class="col-lg-6 align-self-center">
                 <h1 class="text-light mb-4">Somos expertos en la creación de <span
                         class="font-weight-bold">Páginas Web</span></h1>
                 <p class="lead text-light mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-                    harum in laborum nihil non pariatur, placeat, praesentium quia saepe sit ullam unde voluptates! Amet
+                    harum in laborum nihil non pariatur, placeat, praesentium quia saepe sit ullam unde voluptates!
+                    Amet
                     assumenda cum et, repellat soluta vel.</p>
                 <a class="btn btn-outline-light" href="#">Empezar</a>
             </div>
@@ -80,22 +85,17 @@
             </div>
         </div>
     </div>
-    <div class="waves">
-        <div class="wave a"></div>
-        <div class="wave b"></div>
-        <div class="wave c"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="images/source-bro.png" class="img-fluid">
+    <div class="smaller">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi architecto beatae blanditiis dignissimos doloribus enim eos eveniet iste iure necessitatibus nihil, numquam obcaecati officiis, quaerat reiciendis tempora, totam ut?</h1>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
 <!-- Optional JavaScript; choose one of the two! -->
 
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
@@ -112,11 +112,11 @@
     let show = document.getElementById('menu');
     let menuCenter = document.getElementById('ml-auto');
 
-    burgerMenu.addEventListener('click', function () {
+    burgerMenu.addEventListener('click', function() {
         this.classList.toggle('close');
         show.classList.toggle('show');
         menuCenter.classList.toggle('ml-auto');
-    })
+    });
 </script>
 </body>
 </html>
