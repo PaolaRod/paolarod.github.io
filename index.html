@@ -16,15 +16,17 @@
 
     <link rel="icon" type="image.png" href="images/favicon-dipiabit.png">
 
+    <script src="https://kit.fontawesome.com/82ab22f5dc.js" crossorigin="anonymous"></script>
+
     <title>Dipiabit</title>
 </head>
 <body>
-<section class="background">
-    <div class="waves">
-        <div class="wave a"></div>
-        <div class="wave b"></div>
-        <div class="wave c"></div>
-    </div>
+<header class="background">
+    <!--    <div class="waves">-->
+    <!--        <div class="wave a"></div>-->
+    <!--        <div class="wave b"></div>-->
+    <!--        <div class="wave c"></div>-->
+    <!--    </div>-->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <a class="navbar-brand" href="#">
@@ -87,18 +89,21 @@
     </div>
     <div class="smaller">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi architecto beatae blanditiis dignissimos doloribus enim eos eveniet iste iure necessitatibus nihil, numquam obcaecati officiis, quaerat reiciendis tempora, totam ut?</h1>
-                </div>
-            </div>
+            <h2 class="text-light font-weight-bold">Te invito a revisar <br> mis trabajos</h2>
         </div>
     </div>
+</header>
+<section>
+    <div class="container project">
+        <h1>Welcome to white Background</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque consectetur eos ipsa, ipsam
+            laborum laudantium neque nihil nobis nulla numquam possimus quod, reiciendis sapiente similique tempore unde
+            vitae?</p>
+    </div>
+    <img src="images/52123.jpg">
 </section>
 
 <!-- Optional JavaScript; choose one of the two! -->
-
-<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -107,16 +112,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-<script>
-    let burgerMenu = document.getElementById('burger-menu');
-    let show = document.getElementById('menu');
-    let menuCenter = document.getElementById('ml-auto');
-
-    burgerMenu.addEventListener('click', function() {
-        this.classList.toggle('close');
-        show.classList.toggle('show');
-        menuCenter.classList.toggle('ml-auto');
-    });
-</script>
+<script src="index.js"></script>
 </body>
 </html>
