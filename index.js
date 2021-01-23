@@ -1,3 +1,18 @@
+// // Add mediaQuery to Javascript, pending
+//
+// const mediaQuery = window.matchMedia('screen and (max-width: 750px)');
+//
+// function changeMediaQuery(e) {
+//     if (e.matches) {
+//         console.log('MediaQuery matched')
+//     } else {
+//
+//     }
+// }
+//
+// mediaQuery.addEventListener('change',changeMediaQuery)
+
+
 let burgerMenu = document.getElementById('burger-menu');
 let show = document.getElementById('menu');
 let menuCenter = document.getElementById('ml-auto');

@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-color: #4a058d;
+    background-color: #fff;
     font-size: 1rem;
     font-weight: 400;
     transition: all 0.5s ease;
@@ -29,65 +29,32 @@ body {
 
 .background {
     position: relative;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    background-image: url('images/Background.png');
     padding: .8em 0; /*8px*/
     height: 100vh;
 }
 
 .container {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: relative;
     margin: 0 auto;
 }
 
-/*.waves {*/
-/*    position: absolute;*/
-/*    overflow: hidden;*/
-/*    border: 1px solid red;*/
-/*    !*left: 0;*!*/
-/*    !*right: 0;*!*/
-/*    !*height: 200px;*!*/
-/*    !*bottom: 0;*!*/
-/*    bottom: -150px;*/
-/*    height: 527px;*/
-/*    width: 100%;*/
-/*    z-index: 1;*/
-/*}*/
+.btn {
+    background: #3cccfc;
+}
 
-/*.wave {*/
-/*    position: absolute;*/
-/*    left: -180px;*/
-/*    bottom: 0;*/
-/*    !*border: 1px solid red;*!*/
-/*    !*width: 200px;*!*/
-/*    !*height: 200px;*!*/
-/*    !*width: 100%;*!*/
-/*    !*border-radius: 50%;*!*/
-/*    height: 427px;*/
-/*    width: 2402px;*/
-/*    !*background: rgba(0, 0, 0, .3);*!*/
-/*    background: url(./images/waves.png) center bottom no-repeat;*/
-/*    animation: 5s wave ease-in-out infinite alternate;*/
-/*}*/
-
-/*.wave a {*/
-/*    background-position: 0 -854px;*/
-/*}*/
-
-/*.wave.b {*/
-/*    background-position: 0 -427px;*/
-/*    animation-delay: .5s;*/
-/*}*/
-
-/*.wave.c {*/
-/*    background-position: 0 0;*/
-/*    animation-delay: 1.2s;*/
-/*}*/
+.btn:hover {
+    font-weight: bold;
+    color: white;
+    background: #19c4fc;
+}
 
 .smaller {
     display: none;
     visibility: hidden;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
 }
 
 section {
@@ -103,28 +70,13 @@ section img {
     height: 50%;
 }
 
-.project {
-    background-color: #4a058d;
-    text-align: center;
-    width: 70%;
+.portfolio {
+    color: #172358;
 }
 
 .bg-active {
     background-color: white;
 }
-
-
-/*@keyframes wave {*/
-/*    0% {*/
-/*        transform: translate(0,0);*/
-/*    }*/
-/*    50% {*/
-/*        transform: translate(-80px,60px);*/
-/*    }*/
-/*    100% {*/
-/*        transform: translate(160px, -30px);*/
-/*    }*/
-/*}*/
 
 @media screen and (max-width: 750px) {
 
