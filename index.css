@@ -14,8 +14,8 @@
 }
 
 body {
-    font-family: 'Titillium Web', sans-serif;
-    background-color: #fff;
+    font-family: 'Manrope', sans-serif;
+    background-color: #EEF1FE;
     font-size: 1rem;
     font-weight: 400;
     transition: all 0.5s ease;
@@ -26,6 +26,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .background {
     position: relative;
@@ -60,18 +61,76 @@ body {
 section {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-section img {
-    width: 30%;
-    height: 50%;
 }
 
 .portfolio {
+    display: flex;
+    flex-direction: column;
     color: #172358;
+}
+
+.portfolio_h1 h2 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6865e3;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.portfolio_h1  h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.linea {
+    border-top: 3px solid #6865e3;
+    max-width: 100px;
+    padding: 0;
+    margin: 8px auto 0 auto;
+}
+
+.portfolio_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2.5em 1em 0;
+}
+
+.portfolio_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #EEF1FE;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.portfolio_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.portfolio_icon img {
+    position: absolute;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    top: -60px;
+    right: 40px;
+}
+
+.portfolio_title {
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .bg-active {
