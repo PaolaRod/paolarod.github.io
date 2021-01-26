@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-    background-color: #EEF1FE;
+    background: #fff;
     font-size: 1rem;
     font-weight: 400;
     transition: all 0.5s ease;
@@ -58,12 +58,14 @@ body {
     /*border: 1px red solid;*/
 }
 
-section {
-    height: 100vh;
+.portfolio {
+    height: 150vh;
     display: flex;
+    background-image: url("images/Background2.png");
+    overflow: visible;
 }
 
-.portfolio {
+.portfolio_container {
     display: flex;
     flex-direction: column;
     color: #172358;
@@ -110,7 +112,7 @@ section {
     margin: 2em;
     padding: 1em;
     border-radius: 10px;
-    background-color: #EEF1FE;
+    background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
 }
@@ -132,6 +134,11 @@ section {
     font-weight: bold;
     font-size: 1em;
 }
+
+/*.technologies {*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*}*/
 
 .bg-active {
     background-color: white;
