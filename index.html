@@ -21,21 +21,11 @@
 </head>
 <body>
 <header class="background">
-    <!--    <div class="waves">-->
-    <!--        <div class="wave a"></div>-->
-    <!--        <div class="wave b"></div>-->
-    <!--        <div class="wave c"></div>-->
-    <!--    </div>-->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <a class="navbar-brand" href="#">
                 <img src="images/logo-dipiabit.png" class="logo-brand" alt="">
             </a>
-            <!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
-            <!--                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-            <!--                <span class="navbar-toggler-icon"></span>-->
-            <!--            </button>-->
-
             <div id="burger-menu">
                 <span></span>
             </div>
@@ -49,7 +39,7 @@
                         <a class="nav-link text-light" href="#">Portafolio</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <button type="button" class="btn btn-outline-light">Contáctame</button>
+                        <a type="button" href="#footer" class="form_btn">Contáctame</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +52,7 @@
                     harum in laborum nihil non pariatur, placeat, praesentium quia saepe sit ullam unde voluptates!
                     Amet
                     assumenda cum et, repellat soluta vel.</p>
-                <a class="btn btn-outline-light" href="#">Descargar CV</a>
+                <button type="button" class="form_btn">Descargar CV</button>
             </div>
             <div class="col-lg-6">
                 <img src="images/Saly-12.png" class="img-fluid">
@@ -89,7 +79,8 @@
                     Juego de Memoria
                 </div>
                 <div class="portfolio_description">
-                    Realizado básicamente con Javascript, consiste en recordar la combinación de casillas que se encienden.
+                    Realizado básicamente con Javascript, consiste en recordar la combinación de casillas que se
+                    encienden.
                 </div>
             </div>
 
@@ -104,12 +95,13 @@
             </div>
 
             <div class="portfolio_card">
-                <div class="portfolio_icon"><img src="images/Saly-31.svg"></div>
+                <div class="portfolio_icon"><img src="images/Saly-2.png"></div>
                 <div class="portfolio_title">
                     Website con Bootstrap
                 </div>
                 <div class="portfolio_description">
-                    Elabore un sitio web, haciendo uso de todos los componentes del framework Bootstrap.                 </div>
+                    Elabore un sitio web, haciendo uso de todos los componentes del framework Bootstrap.
+                </div>
             </div>
 
             <div class="portfolio_card">
@@ -128,6 +120,53 @@
     <div class="container technologies_container">
     </div>
 </section>
+<footer class="footer" id="footer">
+    <div class="form">
+        <div class="contact-info">
+            <h3 class="info_title">Entremos en contacto</h3>
+            <img class="info_img" src="images/Saly-31.svg">
+            <div class="social_media">
+                <div class="social_icon">
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="index.html" method="POST">
+                <h3 class="form_title">Déjame un mensaje</h3>
+                <div class="input-container">
+                    <input type="text" name="name" class="input">
+                    <label for="">Nombre</label>
+                    <span>Nombre</span>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" class="input">
+                    <label for="">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" class="input">
+                    <label for="">Teléfono</label>
+                    <span>Teléfono</span>
+                </div>
+                <div class="input-container textarea">
+                    <textarea name="mensaje" class="input"></textarea>
+                    <label for="">Mensaje</label>
+                    <span>Mensaje</span>
+                </div>
+                <input type="submit" value="Enviar" class="form_btn"/>
+            </form>
+        </div>
+    </div>
+</footer>
 
 <!-- Optional JavaScript; choose one of the two! -->
 

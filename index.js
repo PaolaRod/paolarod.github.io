@@ -23,12 +23,24 @@ burgerMenu.addEventListener('click', () => {
     menuCenter.classList.toggle('ml-auto');
 });
 
-const bgChanger = () => {
-    if (this.scrollY > this.innerHeight / 2) {
-        document.body.classList.add('bg-active');
-    } else {
-        document.body.classList.remove('bg-active');
-    }
-};
+// contact form
+const inputs = document.querySelectorAll('.input');
 
-window.addEventListener('scroll', bgChanger);
+function focusFunc() {
+    let parent = this.parentNode;
+    parent.classList.add('focus');
+}
+
+function blurFunc() {
+    let parent = this.parentNode;
+    if (this.value === "") {
+    parent.classList.remove('focus');
+    }
+}
+
+inputs.forEach(input => {
+    input.addEventListener('focus', focusFunc);
+    input.addEventListener('blur', blurFunc);
+})
+
+// contact form
