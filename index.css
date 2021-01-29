@@ -72,6 +72,8 @@ body {
     height: 135vh;
     display: flex;
     background-image: url("images/Background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: visible;
 }
 
@@ -202,7 +204,7 @@ form {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1;
-    margin-bottom: 0.7rem;
+    margin-bottom: 3rem;
 }
 
 .input-container {
@@ -341,9 +343,6 @@ form {
 .social_icon a:hover {
     transform: scale(1.05);
 }
-
-
-
 /*contact form*/
 
 
@@ -360,7 +359,6 @@ form {
     #burger-menu {
         width: 27px;
         height: 27px;
-        /*margin: 50px;*/
         cursor: pointer;
         position: relative;
         z-index: 3;
@@ -383,8 +381,6 @@ form {
     }
 
     #burger-menu span {
-        /*right: 0;*/
-        /*top: 13px;*/
         width: 27px;
     }
 
@@ -401,10 +397,8 @@ form {
     }
 
     #burger-menu.close span {
-        /*top: 13px;*/
-        /*width: 27px;*/
         transform: rotate(-45deg);
-        background: red;
+        background: #fafafa;
         position: fixed;
     }
 
@@ -412,7 +406,7 @@ form {
         top: 0;
         transform: rotate(90deg);
         width: 27px;
-        background: red;
+        background: #fafafa;
     }
 
     #burger-menu.close span:after {
@@ -444,7 +438,7 @@ form {
         opacity: 1;
         visibility: visible;
         /*padding-top: 100px;*/
-        background: var(--dark);
+        background: #5B5BD1;
     }
 
     .smaller {
@@ -461,6 +455,9 @@ form {
         margin-top: 50px;
         justify-content: center;
         text-align: center;
+    }
+
+    .portfolio {
     }
 
     /*contact form*/
