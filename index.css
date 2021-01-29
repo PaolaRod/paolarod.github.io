@@ -69,12 +69,22 @@ body {
 }
 
 .portfolio {
-    height: 135vh;
+    width: 100%;
+    height: 130vh;
+    position: relative;
     display: flex;
-    background-image: url("images/Background2.png");
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgb(185, 182, 239));
+}
+
+.portfolio:before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    background-image: url("images/minibackground.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    overflow: visible;
+    background-size: 100%;
 }
 
 .portfolio_container {
@@ -457,8 +467,6 @@ form {
         text-align: center;
     }
 
-    .portfolio {
-    }
 
     /*contact form*/
     .form {
@@ -473,6 +481,14 @@ form {
 
     .social_media {
         padding: 1.5rem 0 0 0;
+    }
+
+    .portfolio {
+        height: 210vh;
+    }
+
+    .portfolio:before {
+        height: 50px;
     }
 }
 
