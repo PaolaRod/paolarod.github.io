@@ -1,0 +1,73 @@
+.skills {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .logo {
+    position: relative;
+    display: flex;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    width: 44%;
+
+    @include breakpoint-up(large) {
+      width: 30%;
+    }
+
+    &.javascript {
+      animation-delay: .5s;
+    }
+
+    &.html {
+      animation-delay: 1s;
+    }
+
+    &.css {
+      animation-delay: 1.5s;
+    }
+
+    &.sass {
+      animation-delay: 2s;
+    }
+
+    &.figma {
+      animation-delay: 2.5s;
+    }
+
+    &.react {
+      animation-delay: 3s;
+    }
+
+    &.webstorm {
+      animation-delay: 3.5s;
+    }
+
+    &.mysql {
+      animation-delay: 4s;
+    }
+
+    &.bootstrap {
+      animation-delay: 4.5s;
+    }
+
+  }
+
+  @keyframes rotate {
+    from {
+      transform: translateY(-15px);
+    }
+    to {
+      transform: translateY(0);
+    }
+
+  }
+
+}

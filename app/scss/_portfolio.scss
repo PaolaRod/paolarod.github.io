@@ -1,0 +1,93 @@
+.portfolio {
+
+  &__title {
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      font-weight: 800;
+      color: #0a0a48;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #6865e3;
+      margin-top: 1em;
+      margin-bottom: 0;
+    }
+
+    .linea {
+      border-top: 3px solid #6865e3;
+      max-width: 100px;
+      padding: 0;
+      margin: 8px auto 0 auto;
+    }
+
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+    margin-top: 2rem;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    background-color: $white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image {
+    height: 12.5rem;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__text {
+    padding: 1.87rem 1.875rem 2.5rem 1.875rem;
+    color: $darkBlue;
+
+    @include breakpoint-up(medium) {
+      padding: 1.875rem 1.562rem;
+    }
+  }
+
+  &__author {
+    font-size: 0.625rem;
+    margin-bottom: 0.75rem;
+
+  }
+
+  &__textTitle {
+    font-size: 1.0625rem;
+    line-height: 1.2;
+    color: $darkBlue;
+    margin-bottom: 0.5rem;
+
+  }
+
+  &__description {
+    font-size: 0.8125rem;
+    text-align: left;
+  }
+
+}

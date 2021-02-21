@@ -1,0 +1,45 @@
+.hero {
+
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+    }
+  }
+
+  &__image {
+    position: relative;
+    background-image: url('../../images/Saly-12.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 20.5rem;
+
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+      background-position: center 70%;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 2;
+      order: 2;
+      height: 34rem;
+      background-image: url("../../images/Saly-12.png");
+      background-position: left center;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    span {
+      font-weight: bold;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 2;
+      order: 1;
+      padding-top: 3rem;
+      text-align: left;
+    }
+  }
+}

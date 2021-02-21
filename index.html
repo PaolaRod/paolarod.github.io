@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,167 +10,282 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./app/scss/style.css">
 
     <link rel="icon" type="image.png" href="images/favicon-dipiabit.png">
 
     <script src="https://kit.fontawesome.com/82ab22f5dc.js" crossorigin="anonymous"></script>
 
-    <title>Dipiabit</title>
+    <title>Paola Rodríguez</title>
 </head>
 <body>
-<header class="background">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-dipiabit.png" class="logo-brand" alt="">
-            </a>
-            <div id="burger-menu">
-                <span></span>
-            </div>
+<header class="header" id="header">
+    <div class="overlay has-fade"></div>
 
-            <div id="menu" class="collapse navbar-collapse" id="menu navbarSupportedContent">
-                <ul class="navbar-nav ml-auto" id="ml-auto">
-                    <li class="nav-item mr-3">
-                        <a class="nav-link text-light" href="#">Acerca de mí</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link text-light" href="#">Portafolio</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a type="button" href="#footer" class="form_btn">Contáctame</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="bigger row d-flex">
-            <div class="col-lg-6 align-self-start pt-5">
-                <h1 class="text-light mb-4">Hola, Soy <span
-                        class="font-weight-bold">Paola Rodríguez</span></h1>
-                <p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-                    harum in laborum nihil non pariatur, placeat, praesentium quia saepe sit ullam unde voluptates!
-                    Amet
-                    assumenda cum et, repellat soluta vel.</p>
-                <button type="button" class="form_btn">Descargar CV</button>
-            </div>
-            <div class="col-lg-6">
-                <img src="images/Saly-12.png" class="img-fluid">
-            </div>
+    <nav class="container container-pall flex flex-jc-sb flex-ai-c">
+        <a href="#header" class="header__logo">
+            <img src="images/logo-dipiabit.svg" alt="logo">
+        </a>
+
+        <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+            <a href="#about">Acerca de mí</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Tecnologías</a>
         </div>
+
+        <a href="#contact" class="button hide-for-mobile">Contáctame</a>
+    </nav>
+
+    <div class="header__menu has-fade">
+        <a href="#about">Acerca de mí</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#skills">Tecnologías</a>
     </div>
-    <div class="smaller">
-        <div class="container">
-            <h2 class="text-light font-weight-bold">Te invito a revisar <br> mis trabajos</h2>
-        </div>
-    </div>
+
 </header>
-<section class="portfolio">
-    <div class="container portfolio_container">
-        <div class="portfolio_h1">
-            <h2>lo que hago</h2>
-            <h1>Portafolio</h1>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero__image"></div>
+        <div class="hero__text">
+            <h1>Hola, Soy <span class="hero__bold"> Paola Rodríguez</span></h1>
+            <p>Desarrollador Frontend Trainee </br> Capacitándome cada día para obtener mi primera experiencia laboral
+                en la industria del software. Dame una oportunidad y sabre merecerla.</p>
+            <a href="#about" class="button">Conocer más...</a>
+        </div>
+    </div>
+</section>
+
+<section class="about container--mtabout" id="about">
+    <div class="about__title container">
+        <div class="gridTitle">
+            <h2>Quien soy?</h2>
+            <h1>Sobre mí</h1>
             <div class="linea"></div>
         </div>
-        <div class="portfolio_grid">
-            <div class="portfolio_card">
-                <div class="portfolio_icon"><img src="images/Saly-22.svg"></div>
-                <div class="portfolio_title">
-                    Juego de Memoria
-                </div>
-                <div class="portfolio_description">
-                    Realizado básicamente con Javascript, consiste en recordar la combinación de casillas que se
-                    encienden.
-                </div>
-            </div>
+    </div>
+    <div class="container container--pt">
+        <div class="about__image">
+            <img class="img1" src="images/img1.jpg" alt="">
+            <img class="img2" src="images/doodle1.png" alt="">
+            <img class="img3" src="images/doodle2.png" alt="">
+            <img class="cross left" src="images/cruz.svg" alt="">
+            <img class="cross right" src="images/cruz.svg" alt="">
+        </div>
+        <div class="about__text">
+            <p>Me recibí de Ingeniero Geólogo en Venezuela, después de 2 años de trabajar en la industria petrolera,
+                tome la
+                decisión de emigrar a Argentina. </p>
 
-            <div class="portfolio_card">
-                <div class="portfolio_icon"><img src="images/Saly-24.svg"></div>
-                <div class="portfolio_title">
-                    Clon de Google
-                </div>
-                <div class="portfolio_description">
-                    Clon del landing page del buscador mas famoso del mundo, replicando cada detalle en html y Css3.
-                </div>
-            </div>
+            <p>De a poco me comenzó a interesar el diseño web, por lo
+                que decidí empezar a aprender de manera autodidacta. Al principio pensaba que sería fácil, sin embargo
+                al
+                empezar descubrí que es mas complejo de lo que
+                imaginaba. Debo confesar que hay días frustrantes, pero después de mucho esfuerzo y constancia poder
+                visualizar en tu pantalla el trabajo tal como fue diseñado, es muy gratificante. Se que el camino es
+                largo y
+                me encuentro en el inicio, pero cada vez que practico, siento que avanzo en conocimientos, en
+                experiencia y
+                me alejo mas y mas de ese duro comienzo. En este punto sé que puedo aprender cualquier cosa que me
+                proponga.</p>
 
-            <div class="portfolio_card">
-                <div class="portfolio_icon"><img src="images/Saly-2.png"></div>
-                <div class="portfolio_title">
-                    Website con Bootstrap
-                </div>
-                <div class="portfolio_description">
-                    Elabore un sitio web, haciendo uso de todos los componentes del framework Bootstrap.
-                </div>
-            </div>
+            <p>Apasionada por la cocina, en especial los postres. Además me encanta el cine, los materiales
+                audivisuales, el diseño, la decoración, entre otras áreas. </p>
 
-            <div class="portfolio_card">
-                <div class="portfolio_icon"><img src="images/Saly-19.svg"></div>
-                <div class="portfolio_title">
-                    Website Responsive
-                </div>
-                <div class="portfolio_description">
-                    Un sitio web, adaptable a pantallas de celulares y tablets, realizado con media queries.
-                </div>
-            </div>
+            <p>Me encuentro en la búsqueda de mi primera oportunidad de empleo en el area IT y mi objetivo a largo plazo
+                es
+                convertirme en una referente en el Desarrollo Frontend, especialista en React.</p>
         </div>
     </div>
 </section>
-<section class="technologies">
-    <div class="container technologies_container">
+
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="portfolio__title">
+            <h2>lo que hago</h2>
+            <h1>Portfolio</h1>
+            <div class="linea"></div>
+        </div>
+        <div class="portfolio__grid">
+            <a href="#" class="portfolio__item">
+                <div class="portfolio__image" style="background-image: url('images/Slice 1.png')"></div>
+                <div class="portfolio__text">
+                    <div class="portfolio__textTitle">
+                        Desafío Frontend Mentor
+                    </div>
+                    <div class="portfolio__description">
+                        Página web responsive, utilizando el preprocesador SASS, con la tutoría de Jessica Chan.
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__item">
+                <div class="portfolio__image" style="background-image: url('images/memoria.png')"></div>
+                <div class="portfolio__text">
+                    <div class="portfolio__textTitle">
+                        Juego de Memoria
+                    </div>
+                    <div class="portfolio__description">
+                        Realizado básicamente con Javascript, consiste en recordar la combinación de casillas que se
+                        encienden.
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__item">
+                <div class="portfolio__image" style="background-image: url('images/clonGoogle.png')"></div>
+                <div class="portfolio__text">
+                    <div class="portfolio__textTitle">
+                        Clon de google
+                    </div>
+                    <div class="portfolio__description">
+                        Clon del landing page del buscador mas famoso del mundo, replicando cada detalle en html y Css3.
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__item">
+                <div class="portfolio__image" style="background-image: url('images/diseñoBootstrap.png')"></div>
+                <div class="portfolio__text">
+                    <div class="portfolio__textTitle">
+                        Website con Bootstrap
+                    </div>
+                    <div class="portfolio__description">
+                        Elabore un sitio web, haciendo uso de todos los componentes del framework Bootstrap.
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__item">
+                <div class="portfolio__image" style="background-image: url('images/diseñoResponsive.png')"></div>
+                <div class="portfolio__text">
+                    <div class="portfolio__textTitle">
+                        Website Responsive
+                    </div>
+                    <div class="portfolio__description">
+                        Un sitio web, adaptable a pantallas de celulares y tablets, realizado con media queries.
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__item">
+                <div class="portfolio__image" style="background-image: url('images/react.png')"></div>
+                <div class="portfolio__text">
+                    <div class="portfolio__textTitle">
+                        Búsqueda de gifs con React
+                    </div>
+                    <div class="portfolio__description">
+                        Una aplicación en la que puedes hacer búsquedas de gifs. Desarrollada en React, realizando
+                        peticiones a un API.
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </section>
-<footer class="footer" id="footer">
-    <div class="form">
-        <div class="contact-info">
-            <h3 class="info_title">Contacto</h3>
-            <img class="info_img" src="images/Saly-31.svg">
-            <div class="social_media">
-                <div class="social_icon">
-                    <a href="#">
+
+<section class="skills container--mt" id="skills">
+    <div class="portfolio__title">
+        <h2>Tecnologías</h2>
+        <h1>Skills</h1>
+        <div class="linea"></div>
+    </div>
+    <div class="container container--mt">
+        <img class="logo javascript" src="images/javascript.svg" alt="" title="javascript">
+        <img class="logo html" src="images/html.svg" alt="" title="html5">
+        <img class="logo css" src="images/css.svg" alt="" title="css3">
+        <img class="logo sass" src="images/sass.svg" alt="" title="sass">
+        <img class="logo figma" src="images/figma.svg" alt="" title="figma">
+        <img class="logo react" src="images/react.svg" alt="" title="react">
+        <img class="logo webstorm" src="images/webstorm.svg" alt="" title="webstorm">
+        <img class="logo mysql" src="images/mysql.svg" alt="" title="mysql">
+        <img class="logo bootstrap" src="images/bootstrap.svg" alt="" title="bootstrap">
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact__grid">
+        <div class="contact__info">
+            <h3 class="info_title">¿Te interesa mi perfil y crees que podríamos realizar un proyecto juntos?</h3>
+            <img class="info_img" src="images/Saly-2.png">
+            <div class="contact__social">
+                <div class="contact__icon">
+                    <a href="#https://www.linkedin.com/in/pao-rodriguez/">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/PaolaRod">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/paox.kyu/">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="contact-form">
+        <div class="contact__form">
             <form action="https://formspree.io/f/xvovlnll" method="POST">
-                <h3 class="form_title">Enviame un mensaje</h3>
-                <div class="input-container">
+                <h3 class="form_title">Hablemos!</h3>
+                <div class="contact__input">
                     <input type="text" name="name" class="input">
                     <label for="">Nombre</label>
                     <span>Nombre</span>
                 </div>
-                <div class="input-container">
+                <div class="contact__input">
                     <input type="email" name="_replyto" class="input">
                     <label for="">Email</label>
                     <span>Email</span>
                 </div>
-                <div class="input-container textarea">
+                <div class="contact__input textarea">
                     <textarea name="message" class="input"></textarea>
                     <label for="">Mensaje</label>
                     <span>Mensaje</span>
                 </div>
-                <input type="submit" value="Enviar" class="form_btn"/>
+                <a type="submit" value="Enviar" class="button">Enviar</a>
             </form>
         </div>
     </div>
+</section>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <a class="footer__logo" href="#header">
+            <img src="images/logo-dipiabit.svg" alt="">
+        </a>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/pao-rodriguez/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/PaolaRod">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/paox.kyu/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="footer__links link1">
+            <a href="#about">Acerca de mí</a>
+        </div>
+
+        <div class="footer__links link2">
+            <a href="#portfolio">Portafolio</a>
+        </div>
+
+        <div class="footer__links link3">
+            <a href="#skills">Tecnologías</a>
+        </div>
+
+        <div class="footer__cta">
+            <a href="#contact" class="button">Contáctame</a>
+        </div>
+
+    </div>
+
 </footer>
 
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="app/js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,127 @@
+.footer {
+  background-color: #5B5BD1;
+  color: $white;
+  padding: 2.5rem;
+  text-align: center;
+
+  .container {
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+            "logo link1 link2 link3 cta"
+            "social link1 link2 link3 cta";
+      gap: 1rem;
+      justify-items: start;
+      align-items: center;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: logo;
+      margin-left: 1rem;
+    }
+  }
+
+  &__social {
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: social;
+      align-self: end;
+    }
+
+    a {
+      display: inline-block;
+      height: 1.25rem;
+    }
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9375rem;
+
+    @include breakpoint-up(large) {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      line-height: 2.25;
+      transition: color 150ms ease-in-out;
+
+      &:hover {
+        color: $blueAqualight;
+      }
+    }
+
+    &.link1 {
+
+      @include breakpoint-up(large) {
+        grid-area: link1;
+      }
+    }
+
+    &.link2 {
+      @include breakpoint-up(large) {
+        grid-area: link2;
+      }
+    }
+
+    &.link3 {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+
+      @include breakpoint-up(large) {
+        grid-area: link3;
+      }
+    }
+  }
+
+
+  &__cta {
+
+    @include breakpoint-up(large) {
+      grid-area: cta;
+      text-align: right;
+      justify-self: end;
+    }
+
+    a.button {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+
+  i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 150ms ease-in-out;;
+
+    &:hover {
+      color: $blueAqualight;
+    }
+  }
+}
