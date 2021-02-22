@@ -4,13 +4,15 @@ const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
+const menuMobile = document.querySelector('.header__menu');
+
 
 btnHamburger.addEventListener('click', function () {
     console.log('hola');
     if (header.classList.contains('open')) { //Close Hamburger menu
         body.classList.remove('noscroll');
         header.classList.remove('open');
-        fadeElems.forEach(function (element){
+        fadeElems.forEach(function (element) {
             element.classList.remove('fade-in');
             element.classList.add('fade-out');
         });
@@ -18,11 +20,22 @@ btnHamburger.addEventListener('click', function () {
     } else { //Open Hamburger menu
         body.classList.add('noscroll');
         header.classList.add('open');
-        fadeElems.forEach(function(element){
+        fadeElems.forEach(function (element) {
             element.classList.remove('fade-out');
             element.classList.add('fade-in');
         });
     }
+});
+
+menuMobile.addEventListener('click', function () {
+    console.log('hello');
+    overlay.classList.remove('fade-in');
+    body.classList.remove('noscroll');
+    header.classList.remove('open');
+    fadeElems.forEach(function (element) {
+        element.classList.remove('fade-in');
+        element.classList.add('fade-out');
+    });
 });
 
 //hamburger menu mobile
@@ -39,7 +52,7 @@ function focusFunc() {
 function blurFunc() {
     let parent = this.parentNode;
     if (this.value === "") {
-    parent.classList.remove('focus');
+        parent.classList.remove('focus');
     }
 }
 
