@@ -3,7 +3,7 @@ Este es mi sitio web responsive y portfolio. Espero que sea de su agrado, siempr
 
 ## Link al sitio web 📌
 Puedes visualizar el sitio web en el siguiente link:
-https://paolarod.github.io/PaolaRod/
+https://paolarod.github.io
  
 ## Herramientas utilizadas 🛠
 * HTML5
